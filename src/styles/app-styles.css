@@ -1,0 +1,8 @@
+nav, footer {
+	background-color: #777;
+	color: #FFF;
+}
+
+main {
+	min-height: 74vh;
+}

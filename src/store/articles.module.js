@@ -1,0 +1,34 @@
+import articleData from '../../article_data.json'
+
+const state = {
+  articles: articleData.articles,
+  active: 1
+}
+
+const getters = {
+  getArticles: state => (
+    Object
+      .keys(state.articles)
+      .map(key => state.articles[key])
+  ),
+
+  getActive: state => state.articles[state.active]
+}
+
+const actions = {
+  ACTIVATE_ARTICLE (context, id) {
+    context.commit('SET_ACTIVE_ARTICLE', id)
+  }
+}
+
+const mutations = {
+  SET_ACTIVE_ARTICLE: id => { state.active = id }
+}
+
+export default {
+  namespaced: true,
+  state,
+  getters,
+  actions,
+  mutations
+}
