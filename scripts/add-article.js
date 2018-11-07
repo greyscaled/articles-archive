@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 
-const path = require('path')
-const fs = require('fs')
+/**
+ * Adds an articles entry
+ */
+
 const inquirer = require('inquirer')
 const json = require('../data/articles.json')
+const {
+  getArticlesPath,
+  writeJsonToFile
+} = require('./common-utils')
 
 async function run () {
   const articleData = {}
@@ -29,7 +35,7 @@ async function run () {
 
   json.articles[articleData.id] = articleData
 
-  await writeToFile()
+  await writeJsonToFile(getArticlesPath(), json)
 }
 
 function askQuestions () {
@@ -76,20 +82,6 @@ function askQuestions () {
 function getNextId () {
   let keys = Object.keys(json.articles)
   return parseInt(keys[keys.length - 1]) + 1
-}
-
-async function writeToFile () {
-  return new Promise((resolve, reject) => {
-    fs.writeFile(
-      path.resolve(__dirname, '../', 'data', 'articles.json'),
-      JSON.stringify(json),
-      'utf8',
-      err => {
-        if (err) reject(err)
-        else resolve()
-      }
-    )
-  })
 }
 
 run()

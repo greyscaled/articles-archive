@@ -1,23 +1,26 @@
 {
-	"articles": {
-		"1": {
-			"id": 1,
-			"path": "articles/should-you-use-js-classes/",
-			"cover": "articles/should-you-use-js-classes/images/kaleidico-754613-unsplash.jpg",
-			"title": "Should You Use Classes in JavaScript?",
-			"subtitle": "Design Expression vs Dogma",
-			"tags": [
-				"javascript",
-				"sfwr engineering",
-				"oop"
-			],
-			"date": "2018-11-05",
-			"published": "https://medium.com/@vapurrmaid/should-you-use-classes-in-javascript-82f3b3df6195"
-		}
-	},
-	"tags": [
-		"javascript",
-		"sfwr engineering",
-		"oop"
-	]
+  "articles": {
+    "1": {
+      "id": 1,
+      "path": "articles/should-you-use-js-classes/",
+      "cover": "articles/should-you-use-js-classes/images/kaleidico-754613-unsplash.jpg",
+      "title": "Should You Use Classes in JavaScript?",
+      "subtitle": "Design Expression vs Dogma",
+      "tags": [
+        "javascript",
+        "sfwr engineering",
+        "oop"
+      ],
+      "date": "2018-11-05",
+      "published": "https://medium.com/@vapurrmaid/should-you-use-classes-in-javascript-82f3b3df6195"
+    }
+  },
+  "tags": [
+    "git",
+    "java",
+    "javascript",
+    "mvc",
+    "oop",
+    "sfwr engineering"
+  ]
 }
