@@ -25,7 +25,7 @@ export default {
   methods: {
     navigateToArticle () {
       this.ACTIVATE_ARTICLE(this.article.id)
-      this.$router.push('article')
+        .then(() => this.$router.push('article'))
     },
 
     ...mapActions('articles', [ 'ACTIVATE_ARTICLE' ])
