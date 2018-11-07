@@ -21,4 +21,4 @@ yarn-error.log*
 *.sw*
 
 # Webpack Configuration - generated from vue inspect
-webpack-config.js
+inspect-out.js
