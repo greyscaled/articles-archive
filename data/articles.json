@@ -13,6 +13,21 @@
       ],
       "date": "2018-11-05",
       "published": "https://medium.com/@vapurrmaid/should-you-use-classes-in-javascript-82f3b3df6195"
+    },
+    "2": {
+      "id": 2,
+      "path": "articles/visual-programming-vcs/",
+      "cover": "articles/visual-programming-vcs/images/pankaj-patel-729895-unsplash.jpg",
+      "title": "Visual Programming & Version Control: Future Considerations",
+      "subtitle": "Graphical Code Needs Visual Comparison Tools",
+      "tags": [
+        "git",
+        "sfwr engineering",
+        "version ctrl",
+        "visual programming"
+      ],
+      "date": "2018-10-26",
+      "published": "https://medium.com/@vapurrmaid/visual-programming-version-control-future-considerations-b18c9a49c187"
     }
   },
   "tags": [
@@ -21,6 +36,8 @@
     "javascript",
     "mvc",
     "oop",
-    "sfwr engineering"
+    "sfwr engineering",
+    "version ctrl",
+    "visual programming"
   ]
 }
