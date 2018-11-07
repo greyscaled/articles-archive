@@ -17,12 +17,14 @@ const getters = {
 
 const actions = {
   ACTIVATE_ARTICLE (context, id) {
-    context.commit('SET_ACTIVE_ARTICLE', id)
+    context.commit('SET_ACTIVE_ARTICLE', parseInt(id))
   }
 }
 
 const mutations = {
-  SET_ACTIVE_ARTICLE: id => { state.active = id }
+  SET_ACTIVE_ARTICLE (state, id) {
+    state.active = id
+  }
 }
 
 export default {
