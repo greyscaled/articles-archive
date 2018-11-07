@@ -1,4 +1,4 @@
-import articleData from '../../article_data.json'
+import articleData from '@/../data/articles.json'
 
 const state = {
   articles: articleData.articles,
